@@ -25,13 +25,6 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dif-cC-S5i">
-                                <rect key="frame" x="117" y="826" width="297" height="70"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="PtU-Lq-hFT" kind="embed" id="jPC-K7-jC1"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-zb-PPV">
                                 <rect key="frame" x="36" y="846" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -42,10 +35,28 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dif-cC-S5i">
+                                <rect key="frame" x="176" y="826" width="238" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="PtU-Lq-hFT" kind="embed" id="jPC-K7-jC1"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inS-3v-Wxb">
+                                <rect key="frame" x="107" y="846" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Bottom"/>
+                                <connections>
+                                    <action selector="bottomButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zji-Kg-dt6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="inS-3v-Wxb" id="uLf-yy-c4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +65,7 @@
         <!--View Controller-->
         <scene sceneID="pkd-M7-NuK">
             <objects>
-                <viewController id="Ep1-qF-BOk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Popover" id="Ep1-qF-BOk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pMc-ts-eMQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,16 +78,16 @@
             </objects>
             <point key="canvasLocation" x="909" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--Inner View Controller-->
         <scene sceneID="19g-Mu-hIv">
             <objects>
-                <viewController id="PtU-Lq-hFT" sceneMemberID="viewController">
+                <viewController id="PtU-Lq-hFT" customClass="InnerViewController" customModule="testPopoverViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mHu-SV-dU0">
-                        <rect key="frame" x="0.0" y="0.0" width="297" height="70"/>
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="70"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEx-JU-buy">
-                                <rect key="frame" x="16" y="20" width="140" height="30"/>
+                                <rect key="frame" x="82" y="20" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Present In Container"/>
                                 <connections>
@@ -85,13 +96,24 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2U-er-tBB">
+                                <rect key="frame" x="16" y="20" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <action selector="presentButtonDidPres:" destination="PtU-Lq-hFT" eventType="touchUpInside" id="6Fh-0Q-leh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
+                    <connections>
+                        <outlet property="presentButton" destination="Z2U-er-tBB" id="D5q-Hh-5Mv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vq-LR-qjy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280.43478260869568" y="525.66964285714289"/>
+            <point key="canvasLocation" x="279.71014492753625" y="525.66964285714289"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

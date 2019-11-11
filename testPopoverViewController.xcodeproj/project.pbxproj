@@ -15,6 +15,7 @@
 		1A05A8B82379724E0009EC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05A8B62379724E0009EC61 /* LaunchScreen.storyboard */; };
 		1A05A8C32379724E0009EC61 /* testPopoverViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05A8C22379724E0009EC61 /* testPopoverViewControllerTests.swift */; };
 		1A05A8CE2379724E0009EC61 /* testPopoverViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05A8CD2379724E0009EC61 /* testPopoverViewControllerUITests.swift */; };
+		1A05A8DD237978790009EC61 /* InnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05A8DC237978790009EC61 /* InnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1A05A8CD2379724E0009EC61 /* testPopoverViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPopoverViewControllerUITests.swift; sourceTree = "<group>"; };
 		1A05A8CF2379724E0009EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A05A8DB2379726C0009EC61 /* testPopoverViewController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testPopoverViewController.entitlements; sourceTree = "<group>"; };
+		1A05A8DC237978790009EC61 /* InnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1A05A8AB2379724A0009EC61 /* AppDelegate.swift */,
 				1A05A8AD2379724A0009EC61 /* SceneDelegate.swift */,
 				1A05A8AF2379724A0009EC61 /* ViewController.swift */,
+				1A05A8DC237978790009EC61 /* InnerViewController.swift */,
 				1A05A8B12379724A0009EC61 /* Main.storyboard */,
 				1A05A8B42379724E0009EC61 /* Assets.xcassets */,
 				1A05A8B62379724E0009EC61 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				1A05A8B02379724A0009EC61 /* ViewController.swift in Sources */,
 				1A05A8AC2379724A0009EC61 /* AppDelegate.swift in Sources */,
 				1A05A8AE2379724A0009EC61 /* SceneDelegate.swift in Sources */,
+				1A05A8DD237978790009EC61 /* InnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
