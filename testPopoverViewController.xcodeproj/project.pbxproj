@@ -443,7 +443,7 @@
 				CODE_SIGN_ENTITLEMENTS = testPopoverViewController/testPopoverViewController.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 78BJD4M4CR;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testPopoverViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,7 +464,7 @@
 				CODE_SIGN_ENTITLEMENTS = testPopoverViewController/testPopoverViewController.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 78BJD4M4CR;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testPopoverViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
